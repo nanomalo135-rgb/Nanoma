@@ -25,7 +25,7 @@ jobs:
         run: |
           echo "PYTHONUTF8=1" >> $GITHUB_ENV
           echo "LANG=C.UTF-8" >> $GITHUB_ENV
-          echo "RANDOM_DELAY=$(( $RANDOM % 240 ))" >> $GITHUB_ENV  # 0-240 minute random delay
+          echo "RANDOM_DELAY=$(( $RANDOM % 2 ))" >> $GITHUB_ENV  # 0-240 minute random delay
           
       - name: Wait random time
         run: |
